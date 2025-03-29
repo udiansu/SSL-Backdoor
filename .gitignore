@@ -1,0 +1,37 @@
+# Ignore git records in subfolders
+__pycache__/
+# Ignore all torch files
+*.pt
+*.pth
+*.pth.tar
+
+# Ignore all datasets
+data/
+
+# Ignore all training results
+results/
+checkpoints/
+logs/
+runs/
+# Ignore repos and submodules
+adversarial-attacks-pytorch/
+apex/
+CompRess/
+defense/
+mine-pytorch/
+simsiam/
+simsiam_new/
+SSL-Cleanse/
+scripts/analysis/
+scripts/files/
+
+# Ignore private things
+configs/**/na*.yaml
+configs/**/badencoder*.yaml
+configs/poisoning/ablation/**
+configs/poisoning/trigger_based/na*.yaml
+
+scripts/models_vis.ipynb
+scripts/compress*.sh
+datasets/dataset_backup.py
+datasets/hidden.py
